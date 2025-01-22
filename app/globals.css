@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Previous root styles remain unchanged */
+/* Previous layer base styles remain unchanged */
+
+.gradient-grid {
+  background: 
+    linear-gradient(to right, rgba(110, 172, 218, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(110, 172, 218, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at center, #021526 0%, #03346E 100%);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gradient-grid::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(110, 172, 218, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(226, 226, 182, 0.1), transparent 40%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  z-index: 2;
+}
+
+.floating-header {
+  background: rgba(3, 52, 110, 0.6);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(110, 172, 218, 0.1);
+  border-radius: 24px;
+  margin: 1rem auto;
+  transition: all 0.3s ease;
+}
+
+.floating-header.scrolled {
+  background: rgba(3, 52, 110, 0.8);
+  box-shadow: 0 8px 32px rgba(2, 21, 38, 0.2);
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #6EACDA 0%, #E2E2B6 100%);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #E2E2B6 0%, #6EACDA 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-button:hover::before {
+  opacity: 1;
+}
+
+.gradient-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Previous animation keyframes and other styles remain unchanged */
+
+.about-us-card {
+  background: linear-gradient(
+    135deg,
+    rgba(3, 52, 110, 0.9) 0%,
+    rgba(110, 172, 218, 0.2) 100%
+  );
+  box-shadow: 
+    0 8px 32px rgba(2, 21, 38, 0.2),
+    0 0 0 1px rgba(110, 172, 218, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.about-us-card:hover {
+  transform: translateY(-5px) rotateX(5deg);
+  box-shadow: 
+    0 12px 40px rgba(2, 21, 38, 0.3),
+    0 0 0 1px rgba(110, 172, 218, 0.2);
+}
+
+/* Add these new gradient utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #E2E2B6 0%, #6EACDA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, rgba(3, 52, 110, 0.9) 0%, rgba(2, 21, 38, 0.9) 100%);
+}
+
+.hover-gradient {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(110, 172, 218, 0.1) 0%, rgba(226, 226, 182, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-gradient:hover::before {
+  opacity: 1;
+}

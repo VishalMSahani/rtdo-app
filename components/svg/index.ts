@@ -1,0 +1,1 @@
+export {default as rtdo } from "./Rtod.svg"
