@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { Twitter, Linkedin, Facebook, Instagram, ChevronRight, MapPin, Mail, Phone } from "lucide-react";
+import { Twitter, Linkedin, Facebook, Instagram, ChevronRight, MapPin, Mail, Phone, Link } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import ALink from "next/link";
+
 
 export const Footer = () => {
   return (
@@ -42,18 +44,18 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-[#6EACDA]">
                 <MapPin className="w-5 h-5 mt-1" />
-                <span>123 Digital Street<br />Marketing City, MC 12345</span>
+                <span>Chintamani apt, Room No G2, AS Road<br />Navi Mumbai, India, 400709</span>
               </li>
               <li className="flex items-center space-x-3 text-[#6EACDA]">
                 <Mail className="w-5 h-5" />
                 <a href="mailto:contact@digitalpro.com" className="hover:text-[#E2E2B6] transition-colors">
-                  contact@digitalpro.com
+                dilipdk8767@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-[#6EACDA]">
                 <Phone className="w-5 h-5" />
                 <a href="tel:+15551234567" className="hover:text-[#E2E2B6] transition-colors">
-                  (555) 123-4567
+                +91 8767194830
                 </a>
               </li>
             </ul>
@@ -93,8 +95,9 @@ export const Footer = () => {
               </motion.a>
             ))}
           </div>
+          <p className="mt-2">  <ALink className="text-white flex justify-center" href="https://vishalsahani.tech/"> <span className="mr-2">Designed & developend By</span> <span className="text-blue-200">Vishal Sahani</span></ALink></p>
           <p className="text-[#6EACDA]">
-            © {new Date().getFullYear()} DigitalPro. All rights reserved.
+            © {new Date().getFullYear()} RTOD Tech Solutions. All rights reserved. 
           </p>
         </div>
       </div>

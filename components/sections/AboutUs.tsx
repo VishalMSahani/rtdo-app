@@ -71,11 +71,11 @@ export const AboutUs = () => {
                 <div className="space-y-6">
                   <div>
                     <h4 className="text-[#E2E2B6] font-semibold mb-2">Years of Experience</h4>
-                    <p className="text-4xl font-bold text-[#6EACDA]">10+</p>
+                    <p className="text-4xl font-bold text-[#6EACDA]">2+</p>
                   </div>
                   <div>
                     <h4 className="text-[#E2E2B6] font-semibold mb-2">Projects Completed</h4>
-                    <p className="text-4xl font-bold text-[#6EACDA]">500+</p>
+                    <p className="text-4xl font-bold text-[#6EACDA]">10+</p>
                   </div>
                   <div>
                     <h4 className="text-[#E2E2B6] font-semibold mb-2">Client Satisfaction</h4>

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { LineChart, Monitor, Share2, Search } from "lucide-react";
+import { LineChart, Monitor, Share2, Search, Server, Shield, Globe, Fingerprint } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export const Services = () => {
@@ -24,7 +24,27 @@ export const Services = () => {
       icon: <Share2 className="w-10 h-10 text-[#6EACDA]" />,
       title: "Social Media",
       description: "Engaging content and community management"
-    }
+    },
+    {
+        icon: <Server className="w-10 h-10 text-[#6EACDA]" />,
+        title: "Full IT Support",
+        description: "Comprehensive IT solutions for seamless business operations"
+      },
+      {
+        icon: <Shield className="w-10 h-10 text-[#6EACDA]" />,
+        title: "Network Security & Firewall",
+        description: "Protect your data with robust security measures"
+      },
+      {
+        icon: <Globe className="w-10 h-10 text-[#6EACDA]" />,
+        title: "Hosting & Domain Service",
+        description: "Reliable hosting and domain registration for your business"
+      },
+      {
+        icon: <Fingerprint className="w-10 h-10 text-[#6EACDA]" />,
+        title: "Biometric Security & Camera",
+        description: "Advanced biometric and surveillance systems for safety"
+      }
   ];
 
   return (
