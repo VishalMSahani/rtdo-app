@@ -27,7 +27,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-3xl"
         >
-          <h1 className="text-3xl md:text-6xl font-bold mb-8 text-[#E2E2B6] leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-8 text-[#E2E2B6] leading-tight">
             RTOD Tech Solutions <br/>
             <span className="text-lg text-white font-medium md:text-2xl"> Transform Your Digital Presence with Innovative Strategies</span>
            

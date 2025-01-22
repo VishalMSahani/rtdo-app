@@ -23,7 +23,7 @@ export const AboutUs = () => {
               <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#E2E2B6] to-[#6EACDA] bg-clip-text text-transparent">
                 Who We Are
               </h2>
-              <p className="text-[#6EACDA] max-w-2xl mx-auto mb-12 text-lg">
+              <p className="text-[#6EACDA] max-w-2xl mx-auto mb-12 text-lg text-justify md:text-center ">
                 A team of passionate digital innovators dedicated to transforming businesses through strategic digital solutions.
               </p>
             </div>
