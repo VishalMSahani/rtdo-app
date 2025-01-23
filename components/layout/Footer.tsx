@@ -44,12 +44,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-[#6EACDA]">
                 <MapPin className="w-5 h-5 mt-1" />
-                <span>Chintamani apt, Room No G2, AS Road<br />Navi Mumbai, India, 400709</span>
+                <span>House No 0041, Room No 1, Ground Floor,<br/></br> Sector-11, Juhugaon, Near Amar Bar, Mens House, <br/> Sanpada, Thane, Maharashtra, India, 400703</span>
               </li>
               <li className="flex items-center space-x-3 text-[#6EACDA]">
                 <Mail className="w-5 h-5" />
                 <a href="mailto:contact@digitalpro.com" className="hover:text-[#E2E2B6] transition-colors">
-                dilipdk8767@gmail.com
+               info@rtodtechsolutions.com
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-[#6EACDA]">
