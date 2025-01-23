@@ -44,7 +44,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-[#6EACDA]">
                 <MapPin className="w-5 h-5 mt-1" />
-                <span>House No 0041, Room No 1, Ground Floor,</br> Sector-11, Juhugaon, Near Amar Bar, Mens House, </br> Sanpada, Thane, Maharashtra, India, 400703</span>
+                <span>House No 0041, Room No 1, Ground Floor, <br/> Sector-11, Juhugaon, Near Amar Bar, Mens House, <br/> Sanpada, Thane, Maharashtra, India, 400703</span>
               </li>
               <li className="flex items-center space-x-3 text-[#6EACDA]">
                 <Mail className="w-5 h-5" />
